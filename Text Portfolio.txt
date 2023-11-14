@@ -1,0 +1,47 @@
+* HOME
+home__social
+https://www.linkedin.com/
+https://dribbble.com/
+https://github.com/
+
+home__description
+Apenas uma estudante de Analise e Desenvolvimento de Sistemas. 
+
+* SOBRE
+about__description
+Estudante, conhecimentos basicos sem experiencia no mercado de tecnologia, buscando por um espaço no mercado de desenvolvimento fron-end
+
+about__info-name
+Anos <br> de experiência
+Projetos <br> concluídos
+Empresas <br> trabalhadas
+
+* SERVIÇOS
+services__modal-service
+Desenvolvo a interface do usuário.
+Desenvolvimento de páginas web.
+Crio interações de elementos de ux.
+Posiciono a marca da sua empresa.
+
+* PORTFÓLIO
+portfolio__description
+Website adaptável a todos os dispositivos, com componentes de ui e interações animadas.
+
+
+* PROJETO
+project__description
+Entre em contato agora para que possamos discutir o seu novo projeto e fazer negócios.
+
+
+* TESTIMONIAL
+testimonial__description
+Executo meu projeto com máximo cuidado e qualidade, e estou disponível 24 horas para oferecer suporte.
+
+
+* FOOTER
+footer__social
+https://www.facebook.com/
+https://www.instagram.com/
+https://twitter.com/
+
+
