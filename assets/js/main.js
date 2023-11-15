@@ -32,28 +32,46 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/* ACCORDION SKILLS */
+const skillsContent = document.querySelectorAll('.skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header');
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
+
+    for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close';
+    }
+
+    if (itemClass === 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open';
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills);
+});
 
 
-/*==================== QUALIFICATION TABS ====================*/
+/* QUALIFICATION TABS */
 
 
-/*==================== SERVICES MODAL ====================*/
+/* SERVICES MODAL */
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/* PORTFOLIO SWIPER  */
 
 
-/*==================== TESTIMONIAL ====================*/
+/* TESTIMONIAL */
 
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/* SCROLL SECTIONS ACTIVE LINK */
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/* CHANGE BACKGROUND HEADER */
 
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/* SHOW SCROLL UP */
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/* DARK LIGHT THEME */ 
