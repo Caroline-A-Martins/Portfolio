@@ -57,11 +57,11 @@ skillsHeader.forEach((el) => {
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target)
-        
-        tabContents.forEach(tabContent =>{
+
+        tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
         })
         target.classList.add('qualification__active')
@@ -73,11 +73,21 @@ tabs.forEach(tab =>{
     })
 })
 
-/* SERVICES MODAL */
-
 
 /* PORTFOLIO SWIPER  */
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
 
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
 /* TESTIMONIAL */
 
