@@ -1,5 +1,5 @@
 # Site de Portfólio Responsivo Carol
-## [Inspiração de Bedimcode, Assiste no youtube](https://youtu.be/27JtRAI3QO8)
+## [Inspiração Bedimcode, Assiste no youtube](https://youtu.be/27JtRAI3QO8)
 ### Responsive Portfolio Website Carol
 
 - Site Pessoal de Portfólio Responsivo usando HTML, CSS e JavaScript
