@@ -1,13 +1,13 @@
-# Responsive Portfolio Website Alexa
-## [Watch it on youtube](https://youtu.be/27JtRAI3QO8)
-### Responsive Portfolio Website Alexa
+# Site de Portfólio Responsivo Carol
+## [Inspitação de Bedimcode, Assiste no youtube](https://youtu.be/27JtRAI3QO8)
+### Responsive Portfolio Website Carol
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Includes a light and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+- Site Pessoal de Portfólio Responsivo usando HTML, CSS e JavaScript
+- Rolagem suave em cada seção
+- Inclui modos claro e escuro.
+- Desenvolvido inicialmente com a metodologia Mobile First, em seguida para desktop.
+- Compatível com todos os dispositivos móveis e com uma interface de usuário bonita e agradável..
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+💙 Créditos. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
-![preview img](/preview.png)
+
