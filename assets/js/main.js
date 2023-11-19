@@ -57,11 +57,11 @@ skillsHeader.forEach((el) => {
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target)
-        
-        tabContents.forEach(tabContent =>{
+
+        tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
         })
         target.classList.add('qualification__active')
@@ -88,31 +88,28 @@ let swiper = new Swiper('.portfolio__container', {
     },
 });
 
+
+
 //CHANGE BACKGROUND HEADER
 
-function scrollHeader(){
+function scrollHeader() {
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header')
+    if (this.scrollY >= 80) nav.classList.add('scroll-header')
     else nav.classList.remove('scroll-header')
- }
- 
- window.addEventListener('scroll', scrollHeader)
- 
- //SHOW SCROLL TOP
+}
 
- function scrollUp(){
+window.addEventListener('scroll', scrollHeader)
+
+/* SHOW SCROLL UP */
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
-    //when the scholl is height than 560 viewpot height, add the show-scroll clas to the tag with the scroll-up id
-    if(this.scrollY >= 560) 
-       scrollUp.classList.add('show-scroll')
-    else
-       scrollUp.classList.remove('show-scroll')
- }
- 
- window.addEventListener('scroll', scrollUp)
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
- //DARK LIGHT THEME
+//DARK LIGHT THEME
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
@@ -126,18 +123,18 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
 //we validade if the user previousl chose a topic
-if(selectedTheme){
-   //If the validadetion is fulfilled, we ask what the issue was to know if we activaed or deactivated the dark-theme
-   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+if (selectedTheme) {
+    //If the validadetion is fulfilled, we ask what the issue was to know if we activaed or deactivated the dark-theme
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-   //Add or remove te dark / icon theme
-   document.body.classList.toggle(darkTheme)
-   themeButton.classList.toggle(iconTheme)
-   //We save the theme and the current icon that the user chose
-   localStorage.setItem('selected-theme', getCurrentTheme())
-   localStorage.setItem('selected-icon', getCurrentIcon())
+    //Add or remove te dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    //We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
 })
