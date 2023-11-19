@@ -266,6 +266,10 @@ img {
   }
 
 /* HOME */
+.home__container{
+    gap: 1rem;
+  }
+
 .home__content {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
@@ -293,7 +297,7 @@ img {
 }
 
 .home__blob-img {
-  width: 220px;
+  width: 170px;
 }
 
 .home__data {
